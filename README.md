@@ -1,6 +1,6 @@
 # PicNamer
 
-TODO: Write a gem description
+Renames all yo JPEGs.
 
 ## Installation
 
@@ -18,12 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-You should be able to run this using the name_pics.rb script.
+You should be able to run this using the bin/name_pics.rb script, like so:
 
-## Contributing
-
-1. Fork it ( https://github.com/kyleoliveira/pic_namer/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+    $ ruby -Ilib ./bin/name_pics.rb ~/Pictures/test test jpg
+    
+where:
+* "~/Pictures/test" is the directory containing the pictures
+* "test" is the new prefix to put on the files
+* "jpg" is the extension to use for the new files (defaults to "jpg")
